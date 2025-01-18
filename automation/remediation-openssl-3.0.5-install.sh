@@ -1,3 +1,7 @@
+Oneliner:  sudo apt update && sudo apt install build-essential checkinstall zlib1g-dev -y && sudo wget -P /usr/local/src https://www.openssl.org/source/openssl-3.0.5.tar.gz && cd /usr/local/src && sudo tar -xf openssl-3.0.5.tar.gz && cd openssl-3.0.5 && sudo ./config && sudo make && sudo make install && echo "/usr/local/lib64" | sudo tee /etc/ld.so.conf.d/openssl-3.conf && sudo ldconfig && /usr/local/bin/openssl version && echo "Rebooting system to apply changes..." && sudo reboot
+
+OR
+
 #!/bin/bash
 
 echo "Installing dependencies..."
